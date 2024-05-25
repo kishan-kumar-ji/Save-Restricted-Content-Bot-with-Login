@@ -12,11 +12,11 @@ from dotenv import load_dotenv
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 load_dotenv(override=True)
 
-API_ID = int(os.getenv("TG_API_ID", "5120"))
-API_HASH = os.getenv("TG_API_HASH", "1fda88a5d1de478bce198e")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "token")
-MONGODB_URL = os.getenv("MONGODB_URL", "mongouri")
-BOT_USERNAME = None
+API_ID = int(os.getenv("TG_API_ID", "28361463"))
+API_HASH = os.getenv("TG_API_HASH", "f187c9953370b22b69d4f94d24aa4577")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "6972802029:AAHttH7J10Cumj85c2kb5jzhaT37gd8LvpU")
+MONGODB_URL = os.getenv("MONGODB_URL", "mongodb+srv://Kakashi:aloksingh@kakashi.hnjnbw0.mongodb.net/?retryWrites=true&w=majority")
+BOT_USERNAME ='Nexx_restricted_bot'
 bot = TelegramClient('bot', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
 mongo_client = MongoClient(MONGODB_URL, server_api=ServerApi('1'))
 download_folder = 'files'
